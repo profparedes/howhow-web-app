@@ -1,0 +1,32 @@
+import { createGlobalStyle } from 'styled-components'
+
+export default createGlobalStyle`
+    :root{
+        --primary: #007bff;
+    };
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    };
+
+    html, body, #root{
+        min-height: 100vh;
+    };
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: inherit;
+    }
+
+`

@@ -2,6 +2,11 @@ import { memo, useCallback } from 'react'
 
 import { useTranslation } from 'react-i18next'
 
+import BrazilFlag from 'assets/images/brazil-flag.png'
+import USAFlag from 'assets/images/usa-flag.jpeg'
+
+import { Img } from './style'
+
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation()
 
@@ -11,22 +16,19 @@ const LanguageSwitcher: React.FC = () => {
   )
 
   return (
-    <div>
-      <button
+    <div className="d-flex gap-1">
+      <Img
+        src={USAFlag}
+        alt="USA language"
         data-testid="language-switcher-en-button"
-        type="button"
         onClick={() => handleChangeLanguage('en')}
-      >
-        en
-      </button>
-      <button
+      />
+      <Img
+        src={BrazilFlag}
+        alt="Linguagem pt-BR"
         data-testid="language-switcher-pt-br-button"
-        type="button"
         onClick={() => handleChangeLanguage('pt-BR')}
-      >
-        pt-BR
-      </button>
-      <p>{i18n.language}</p>
+      />
     </div>
   )
 }

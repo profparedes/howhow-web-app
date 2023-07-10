@@ -1,9 +1,19 @@
 {
   "home": {
-    "head-title": "Home",
+    "head-title": "HowHow - Turning Content into Business",
     "title": "Hello world"
   },
   "not-found": {
     "title": "Page not found"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "influencer": "I'm influencer",
+    "contact": "Contact",
+    "button": {
+      "login": "Login",
+      "register": "Register"
+    }
   }
 }

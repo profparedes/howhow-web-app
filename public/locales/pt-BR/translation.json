@@ -1,9 +1,19 @@
 {
   "home": {
-    "head-title": "Inicial",
+    "head-title": "HowHow - Transformando conteúdo em negócios",
     "title": "Olá mundo"
   },
   "not-found": {
     "title": "Página não encontrada"
+  },
+  "header": {
+    "home": "Início",
+    "about": "Sobre nós",
+    "influencer": "Sou influenciador",
+    "contact": "Contato",
+    "button": {
+      "login": "Fazer Login",
+      "register": "Registre-se"
+    }
   }
 }
