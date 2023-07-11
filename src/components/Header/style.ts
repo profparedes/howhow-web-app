@@ -1,13 +1,7 @@
-import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { styled } from 'styled-components'
 
-export const LoginButton = styled(Button)`
-  border-radius: 2rem;
-  padding: 0.7rem 1rem;
-`
-
-export const HeaderLink = styled(Link)`
+export const MenuItem = styled(Link)`
   &:hover {
     color: var(--primary);
   }
