@@ -1,6 +1,5 @@
 import { memo } from 'react'
 
-import { Container } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 
 import HowhowLogo from 'assets/images/howhow-logo.svg'
@@ -14,7 +13,7 @@ const Header: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <Container className="d-flex align-items-center justify-content-between mt-3">
+    <div className="d-flex align-items-center justify-content-between px-5">
       <Img src={HowhowLogo} alt="Howhow logo" />
       <div className="d-flex align-items-center">
         <div className="d-flex gap-3 me-3">
@@ -31,7 +30,7 @@ const Header: React.FC = () => {
           <LanguageSwitcher />
         </div>
       </div>
-    </Container>
+    </div>
   )
 }
 

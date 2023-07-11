@@ -15,5 +15,11 @@
       "login": "Fazer Login",
       "register": "Registre-se"
     }
+  },
+  "board": {
+    "home-title": "Transformando <0>conteúdos</0> em negócios.",
+    "home-subtitle": "A <0>Howhow</0> é uma empresa que conecta marcas a influenciadores, encerre longas esperas por campanhas ou e-mails. Nosso sistema centralizado acelera o marketing de influência, potencializando resultados.",
+    "home-company-button": "Sou empresa",
+    "home-influencer-button": "Sou influenciador"
   }
 }

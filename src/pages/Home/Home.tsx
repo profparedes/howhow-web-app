@@ -1,12 +1,18 @@
 import { memo, useEffect } from 'react'
 
-import { useTranslation } from 'react-i18next'
+import { Col, Container } from 'react-bootstrap'
+import { Trans, useTranslation } from 'react-i18next'
+import { IoIosArrowDown } from 'react-icons/io'
 
-import Config from 'Config'
+import HeroDash from 'assets/images/hero-dash.png'
 
+import BoardSection from 'components/BoardSection/BoardSection'
+import Button from 'components/Button/Button'
 import Header from 'components/Header/Header'
 
 import useTitle from 'hooks/useTitle'
+
+import { ArrowDown, H1, HomeBackground, TitleSpan } from './style'
 
 const Home: React.FC = () => {
   const { t, i18n } = useTranslation()
@@ -19,9 +25,36 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Header />
-      <h1>{t('home.title')}</h1>
-      <p>{`v${Config.app.version}`}</p>
+      <HomeBackground>
+        <Header />
+        <Container>
+          <BoardSection>
+            <Col>
+              <H1>
+                <Trans i18nKey="board.home-title">
+                  <TitleSpan />
+                </Trans>
+              </H1>
+              <p className="fs-5">
+                <Trans i18nKey="board.home-subtitle">
+                  <span className="fw-bold" />
+                </Trans>
+              </p>
+              <div className="mt-2 d-flex gap-2">
+                <Button label={t('board.home-company-button')} />
+                <Button outline label={t('board.home-influencer-button')} />
+              </div>
+            </Col>
+            <Col>
+              <img src={HeroDash} alt="Conectando influenciadores" />
+            </Col>
+          </BoardSection>
+          <ArrowDown>
+            <IoIosArrowDown size={24} />
+          </ArrowDown>
+        </Container>
+      </HomeBackground>
+      <h1>Teste</h1>
     </>
   )
 }

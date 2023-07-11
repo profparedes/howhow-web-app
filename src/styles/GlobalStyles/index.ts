@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export default createGlobalStyle`
     :root{
         --primary: #007bff;
+        --soft-primary: #b5d7fe;
     };
 
     * {

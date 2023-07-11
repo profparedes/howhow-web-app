@@ -15,5 +15,11 @@
       "login": "Login",
       "register": "Register"
     }
+  },
+  "board": {
+    "home-title": "Turning <0>content</0> into business.",
+    "home-subtitle": "<0>Howhow</0> is a company that connects brands to influencers, end long waits for campaigns or emails. Our centralized system accelerates influencer marketing, boosting results.",
+    "home-company-button": "I'm a company",
+    "home-influencer-button": "I'm an influencer"
   }
 }
