@@ -7,8 +7,11 @@ import { IoIosArrowDown } from 'react-icons/io'
 import HeroDash from 'assets/images/hero-dash.png'
 
 import BoardSection from 'components/BoardSection/BoardSection'
+import BoardTitle from 'components/BoardTitle/BoardTitle'
 import Button from 'components/Button/Button'
+import CompaniesCarousel from 'components/CompaniesCarousel/CompaniesCarousel'
 import Header from 'components/Header/Header'
+import Results from 'components/Results/Results'
 
 import useTitle from 'hooks/useTitle'
 
@@ -36,7 +39,7 @@ const Home: React.FC = () => {
                 </Trans>
               </H1>
               <p className="fs-5">
-                <Trans i18nKey="board.home-subtitle">
+                <Trans i18nKey="board.home-description">
                   <span className="fw-bold" />
                 </Trans>
               </p>
@@ -54,7 +57,32 @@ const Home: React.FC = () => {
           </ArrowDown>
         </Container>
       </HomeBackground>
-      <h1>Teste</h1>
+      <div className="d-flex flex-column flex-md-row gap-4 justify-content-center my-5">
+        <Results
+          dataResult="+6.916"
+          description={t('board.results-campaigns')}
+        />
+        <Results
+          dataResult="+12.400"
+          description={t('board.results-influencers')}
+        />
+        <Results dataResult="+62" description={t('board.results-companies')} />
+      </div>
+      <BoardTitle
+        title={t('board.about-title')}
+        description={t('board.about-description')}
+        buttonLabel={t('board.about-button')}
+      />
+      <div className="mb-5">
+        <h5 className="text-center mb-3">{t('board.about-brands')}</h5>
+        <CompaniesCarousel />
+      </div>
+      <p className="text-center">{t('board.steps-intro')}</p>
+      <BoardTitle
+        title={t('board.steps-title')}
+        description={t('board.steps-description')}
+        buttonLabel={t('board.steps-button')}
+      />
     </>
   )
 }

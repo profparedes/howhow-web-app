@@ -18,8 +18,28 @@
   },
   "board": {
     "home-title": "Transformando <0>conteúdos</0> em negócios.",
-    "home-subtitle": "A <0>Howhow</0> é uma empresa que conecta marcas a influenciadores, encerre longas esperas por campanhas ou e-mails. Nosso sistema centralizado acelera o marketing de influência, potencializando resultados.",
+    "home-description": "A <0>Howhow</0> é uma empresa que conecta marcas a influenciadores, encerre longas esperas por campanhas ou e-mails. Nosso sistema centralizado acelera o marketing de influência, potencializando resultados.",
     "home-company-button": "Sou empresa",
-    "home-influencer-button": "Sou influenciador"
+    "home-influencer-button": "Sou influenciador",
+    "results-campaigns": "Camanhas realizadas",
+    "results-influencers": "Influenciadores cadastrados",
+    "results-companies": "Empresas cadastradas",
+    "about-title": "Um pouco da nossa história",
+    "about-description": "A Howhow reinventa a interação entre marcas e influenciadores. Nossa plataforma centraliza e acelera todas as fases das campanhas de marketing de influência, tornando a colaboração eficiente e eficaz. Com a Howhow, cada conexão conta.",
+    "about-button": "Entre em contato",
+    "about-brands": "Mais de 30 marcas globais reconhecidas",
+    "steps-intro": "Passo a passo",
+    "steps-title": "Como funciona uma campanha?",
+    "steps-description": "Criar e acompanhar uma campanha de marketing na nossa plataforma é fácil!",
+    "steps-button": "Vantagens para influenciadores",
+    "step-1-title": "Crie uma campanha",
+    "step-1-description": "Pesquise, filtre e crie listas personalizadas com milhares de influenciadores e veja seus perfis, números, estatísticas, projetos anteriores, custo e outras informações para achar os perfis ideais para sua campanha.",
+    "step-1-footer": "Passo 01",
+    "step-2-title": "Escolha os influenciadores",
+    "step-2-description": "Acesse o perfil de vários influenciadores e tenha acesso a informações detalhadas em tempo real, como preferências, números, trabalhos anteriores.",
+    "step-2-footer": "Passo 02",
+    "step-3-title": "Gerencie a sua campanha",
+    "step-3-description": "Acompanhe o processo da sua campanha, tenha um histórico detalhado do processo de cada influenciador, se ele já aceitou a proposta, já assinou o contrato, já enviou o vídeo para revisão, acompanhe as estatísticas da campanha do começo ao fim.",
+    "step-3-footer": "Passo 03"
   }
 }
