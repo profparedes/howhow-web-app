@@ -21,7 +21,7 @@ const ContactForm: React.FC<IContactFormProps> = ({ onSubmit }) => {
         <Form.Control type="text" placeholder={t('board.form-company')} />
         <Form.Control type="email" placeholder={t('board.form-email')} />
         <Form.Control type="text" placeholder={t('board.form-phone')} />
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" onClick={onSubmit}>
           {t('board.form-button')}
         </Button>
       </Form.Group>
