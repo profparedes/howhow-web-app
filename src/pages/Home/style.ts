@@ -6,12 +6,13 @@ export const HomeBackground = styled.div`
 `
 
 export const H1 = styled.h1`
-  font-size: 3rem;
+  font-size: 3.3rem;
+  font-weight: 700;
 `
 
 export const TitleSpan = styled.span`
   color: var(--primary);
-  font-weight: bold;
+  font-weight: 900;
 `
 
 export const ArrowDown = styled.div`

@@ -4,17 +4,17 @@ export default createGlobalStyle`
     :root{
         --primary: #007bff;
         --soft-primary: #b5d7fe;
-    };
+    }
 
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    };
+    }
 
-    html, body, #root{
-        min-height: 100vh;
-    };
+    body {
+        font-family: 'Nunito', sans-serif;
+    }
 
     p {
         margin-top: 0;

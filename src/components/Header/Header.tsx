@@ -1,6 +1,7 @@
 import { memo } from 'react'
 
 import { useTranslation } from 'react-i18next'
+import { AiOutlineMenu } from 'react-icons/ai'
 
 import HowhowLogo from 'assets/images/howhow-logo.svg'
 
@@ -13,10 +14,13 @@ const Header: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="d-flex align-items-center justify-content-between px-5">
+    <div className="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between px-5">
       <Img src={HowhowLogo} alt="Howhow logo" />
-      <div className="d-flex align-items-center">
-        <div className="d-flex gap-3 me-3">
+      <div className="d-block d-lg-none mt-3">
+        <AiOutlineMenu size={24} />
+      </div>
+      <div className="d-flex align-items-center mt-3">
+        <div className="d-none d-lg-flex gap-3 me-3">
           <MenuItem to="#home">{t('header.home')}</MenuItem>
           <MenuItem to="#about">{t('header.about')}</MenuItem>
           <MenuItem to="#influencer">{t('header.influencer')}</MenuItem>

@@ -14,7 +14,7 @@ const BoardTitle: React.FC<IBoardTitleProps> = ({
   buttonLabel,
 }) => (
   <div className="text-center w-50 mx-auto mb-5">
-    <h4>{title}</h4>
+    <h4 style={{ fontWeight: 500 }}>{title}</h4>
     <p className="mb-4">{description}</p>
     <Button label={buttonLabel} withArrow />
   </div>

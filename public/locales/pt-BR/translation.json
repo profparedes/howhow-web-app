@@ -34,12 +34,13 @@
     "steps-button": "Vantagens para influenciadores",
     "step-1-title": "Crie uma campanha",
     "step-1-description": "Pesquise, filtre e crie listas personalizadas com milhares de influenciadores e veja seus perfis, números, estatísticas, projetos anteriores, custo e outras informações para achar os perfis ideais para sua campanha.",
-    "step-1-footer": "Passo 01",
+    "step-1-short-description": "Pesquise, filtre e crie listas personalizadas com milhares de influenciadores e veja seus perfis, números, estatísticas, projetos anteriores...",
+    "step": "Passo",
     "step-2-title": "Escolha os influenciadores",
     "step-2-description": "Acesse o perfil de vários influenciadores e tenha acesso a informações detalhadas em tempo real, como preferências, números, trabalhos anteriores.",
-    "step-2-footer": "Passo 02",
+    "step-2-short-description": "Acesse o perfil de vários influenciadores e tenha acesso a informações detalhadas em tempo real...",
     "step-3-title": "Gerencie a sua campanha",
     "step-3-description": "Acompanhe o processo da sua campanha, tenha um histórico detalhado do processo de cada influenciador, se ele já aceitou a proposta, já assinou o contrato, já enviou o vídeo para revisão, acompanhe as estatísticas da campanha do começo ao fim.",
-    "step-3-footer": "Passo 03"
+    "step-3-short-description": "Acompanhe o processo da sua campanha, tenha um histórico detalhado do processo de cada influenciador..."
   }
 }

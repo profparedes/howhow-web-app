@@ -1,8 +1,10 @@
-import { memo, useEffect } from 'react'
+import { memo, useEffect, useState } from 'react'
 
 import { Col, Container } from 'react-bootstrap'
 import { Trans, useTranslation } from 'react-i18next'
+import { BsMegaphone, BsPersonCheck } from 'react-icons/bs'
 import { IoIosArrowDown } from 'react-icons/io'
+import { VscGraph } from 'react-icons/vsc'
 
 import HeroDash from 'assets/images/hero-dash.png'
 
@@ -12,14 +14,20 @@ import Button from 'components/Button/Button'
 import CompaniesCarousel from 'components/CompaniesCarousel/CompaniesCarousel'
 import Header from 'components/Header/Header'
 import Results from 'components/Results/Results'
+import StepCard from 'components/StepCard/StepCard'
 
 import useTitle from 'hooks/useTitle'
 
 import { ArrowDown, H1, HomeBackground, TitleSpan } from './style'
 
 const Home: React.FC = () => {
+  const [selectedStep, setSelectedStep] = useState(1)
   const { t, i18n } = useTranslation()
   const setTitle = useTitle()
+
+  const step1 = selectedStep === 1
+  const step2 = selectedStep === 2
+  const step3 = selectedStep === 3
 
   useEffect(() => {
     setTitle(t('home.head-title'))
@@ -49,7 +57,11 @@ const Home: React.FC = () => {
               </div>
             </Col>
             <Col>
-              <img src={HeroDash} alt="Conectando influenciadores" />
+              <img
+                className="img-fluid"
+                src={HeroDash}
+                alt="Conectando influenciadores"
+              />
             </Col>
           </BoardSection>
           <ArrowDown>
@@ -83,6 +95,44 @@ const Home: React.FC = () => {
         description={t('board.steps-description')}
         buttonLabel={t('board.steps-button')}
       />
+      <Container className="d-block d-md-flex justify-content-center gap-3 mb-5">
+        <StepCard
+          icon={<BsMegaphone size={46} />}
+          title={t('board.step-1-title')}
+          description={
+            step1
+              ? t('board.step-1-description')
+              : t('board.step-1-short-description')
+          }
+          position={1}
+          onClick={() => setSelectedStep(1)}
+          selectedCard={step1}
+        />
+        <StepCard
+          icon={<BsPersonCheck size={46} />}
+          title={t('board.step-2-title')}
+          description={
+            step2
+              ? t('board.step-2-description')
+              : t('board.step-2-short-description')
+          }
+          position={2}
+          onClick={() => setSelectedStep(2)}
+          selectedCard={step2}
+        />
+        <StepCard
+          icon={<VscGraph size={46} />}
+          title={t('board.step-3-title')}
+          description={
+            step3
+              ? t('board.step-3-description')
+              : t('board.step-3-short-description')
+          }
+          position={3}
+          onClick={() => setSelectedStep(3)}
+          selectedCard={step3}
+        />
+      </Container>
     </>
   )
 }

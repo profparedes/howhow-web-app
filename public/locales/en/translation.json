@@ -34,12 +34,13 @@
     "steps-button": "Advantages for influencers",
     "step-1-title": "Create a campaign",
     "step-1-description": "Research, filter, and create personalized lists with thousands of influencers. View their profiles, numbers, statistics, previous projects, costs, and other information to find the ideal profiles for your campaign.",
-    "step-1-footer": "Step 01",
+    "step-1-short-description": "Research, filter, and create personalized lists with thousands of influencers. View their profiles, numbers...",
+    "step": "Step",
     "step-2-title": "Choose the influencers",
     "step-2-description": "Access the profiles of various influencers and get real-time detailed information, such as preferences, numbers, and previous work.",
-    "step-2-footer": "Step 02",
+    "step-2-short-description": "Access the profiles of various influencers and get real-time detailed information...",
     "step-3-title": "Manage your campaign",
     "step-3-description": "Track the progress of your campaign, have a detailed history of each influencer's process, whether they have accepted the proposal, signed the contract, submitted the video for review, and monitor campaign statistics from start to finish.",
-    "step-3-footer": "Step 03"
+    "step-3-short-description": "Track the progress of your campaign, have a detailed history of each influencer's process, whether they have accepted the proposal..."
   }
 }

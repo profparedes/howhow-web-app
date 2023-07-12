@@ -15,7 +15,7 @@ const BoardSection: React.FC<IBoardSectionProps> = ({
 
   return (
     <RowSection
-      className={`${flexRowReverse} align-items-center row-cols-1 row-cols-md-2`}
+      className={`${flexRowReverse} align-items-center row-cols-1 row-cols-lg-2`}
     >
       {children}
     </RowSection>
