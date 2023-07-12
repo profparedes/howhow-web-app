@@ -1,7 +1,10 @@
-import { Link } from 'react-router-dom'
 import { styled } from 'styled-components'
 
-export const MenuItem = styled(Link)`
+export const MenuItem = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+
   &:hover {
     color: var(--primary);
   }

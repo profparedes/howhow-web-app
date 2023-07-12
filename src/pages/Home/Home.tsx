@@ -55,7 +55,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <BackgroundColor>
+      <BackgroundColor id="about">
         <Header />
         <Container>
           <RowSection className="align-items-center row-cols-1 row-cols-lg-2">
@@ -88,7 +88,10 @@ const Home: React.FC = () => {
           </ArrowDown>
         </Container>
       </BackgroundColor>
-      <div className="d-flex flex-column flex-md-row gap-4 justify-content-center my-5">
+      <div
+        id="about"
+        className="d-flex flex-column flex-md-row gap-4 justify-content-center my-5"
+      >
         <Results
           dataResult="+6.916"
           description={t('board.results-campaigns')}
@@ -197,7 +200,7 @@ const Home: React.FC = () => {
           inverted
         />
       </SectionBanner>
-      <Container className="mb-5">
+      <Container id="influencer" className="mb-5">
         <BoardTitle
           title={t('section.category-title')}
           description={t('section.category-description')}
@@ -226,7 +229,7 @@ const Home: React.FC = () => {
           />
         </Container>
       </BackgroundColor>
-      <Container className="my-5">
+      <Container id="contact" className="my-5">
         <Row className="align-items-center row-cols-1 row-cols-lg-2">
           <Col>
             <H2>{t('board.contact-title')}</H2>

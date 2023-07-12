@@ -16,6 +16,14 @@ const Header: React.FC = () => {
   const { t } = useTranslation()
   const [showMenu, setShowMenu] = useState(false)
 
+  const handleLinkClick = (sectionId: string): void => {
+    const sectionElement = document.getElementById(sectionId)
+
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <>
       <div className="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between px-5">
@@ -27,10 +35,18 @@ const Header: React.FC = () => {
         </div>
         <div className="d-flex align-items-center mt-3">
           <div className="d-none d-lg-flex gap-3 me-3">
-            <MenuItem to="#home">{t('header.home')}</MenuItem>
-            <MenuItem to="#about">{t('header.about')}</MenuItem>
-            <MenuItem to="#influencer">{t('header.influencer')}</MenuItem>
-            <MenuItem to="#contact">{t('header.contact')}</MenuItem>
+            <MenuItem onClick={() => handleLinkClick('home')}>
+              {t('header.home')}
+            </MenuItem>
+            <MenuItem onClick={() => handleLinkClick('about')}>
+              {t('header.about')}
+            </MenuItem>
+            <MenuItem onClick={() => handleLinkClick('influencer')}>
+              {t('header.influencer')}
+            </MenuItem>
+            <MenuItem onClick={() => handleLinkClick('contact')}>
+              {t('header.contact')}
+            </MenuItem>
           </div>
           <div className="d-flex gap-2 me-3">
             <Button outline label={t('header.button.login')} />
@@ -50,10 +66,18 @@ const Header: React.FC = () => {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div className="d-flex flex-column gap-4 mb-5">
-            <MenuItem to="#home">{t('header.home')}</MenuItem>
-            <MenuItem to="#about">{t('header.about')}</MenuItem>
-            <MenuItem to="#influencer">{t('header.influencer')}</MenuItem>
-            <MenuItem to="#contact">{t('header.contact')}</MenuItem>
+            <MenuItem onClick={() => handleLinkClick('home')}>
+              {t('header.home')}
+            </MenuItem>
+            <MenuItem onClick={() => handleLinkClick('about')}>
+              {t('header.about')}
+            </MenuItem>
+            <MenuItem onClick={() => handleLinkClick('influencer')}>
+              {t('header.influencer')}
+            </MenuItem>
+            <MenuItem onClick={() => handleLinkClick('contact')}>
+              {t('header.contact')}
+            </MenuItem>
           </div>
           <EmailContact />
         </Offcanvas.Body>
