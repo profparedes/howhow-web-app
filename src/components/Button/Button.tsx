@@ -19,8 +19,10 @@ const Button: React.FC<IButtomProps> = ({
 }) => {
   return (
     <StyledButton
-      variant={outline ? 'outline-primary' : 'primary'}
+      // variant={outline ? 'outline-primary' : 'primary'}
+      $isOutline={outline}
       onClick={handleClick}
+      to="*"
     >
       {label} {withArrow && <MdKeyboardArrowRight size={24} />}
     </StyledButton>

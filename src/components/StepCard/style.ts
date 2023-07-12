@@ -12,7 +12,7 @@ export const BackgroundCard = styled.div<IStyledProps>`
   background-repeat: no-repeat;
   background-size: cover;
   background-color: ${({ $isSelected }) =>
-    $isSelected ? 'rgba(0, 123, 255, 0.9)' : '#f3f6fc'};
+    $isSelected ? 'var(--primary)' : '#f3f6fc'};
   color: ${({ $isSelected }) => $isSelected && '#fff'};
   padding: 1.5rem 1.5rem 1.5rem 2rem;
   border-radius: 1.5rem;

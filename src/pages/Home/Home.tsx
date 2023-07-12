@@ -8,7 +8,6 @@ import { VscGraph } from 'react-icons/vsc'
 
 import HeroDash from 'assets/images/hero-dash.png'
 
-import BoardSection from 'components/BoardSection/BoardSection'
 import BoardTitle from 'components/BoardTitle/BoardTitle'
 import Button from 'components/Button/Button'
 import CompaniesCarousel from 'components/CompaniesCarousel/CompaniesCarousel'
@@ -18,7 +17,7 @@ import StepCard from 'components/StepCard/StepCard'
 
 import useTitle from 'hooks/useTitle'
 
-import { ArrowDown, H1, HomeBackground, TitleSpan } from './style'
+import { ArrowDown, H1, HomeBackground, RowSection, TitleSpan } from './style'
 
 const Home: React.FC = () => {
   const [selectedStep, setSelectedStep] = useState(1)
@@ -39,7 +38,7 @@ const Home: React.FC = () => {
       <HomeBackground>
         <Header />
         <Container>
-          <BoardSection>
+          <RowSection className="align-items-center row-cols-1 row-cols-lg-2">
             <Col>
               <H1>
                 <Trans i18nKey="board.home-title">
@@ -63,7 +62,7 @@ const Home: React.FC = () => {
                 alt="Conectando influenciadores"
               />
             </Col>
-          </BoardSection>
+          </RowSection>
           <ArrowDown>
             <IoIosArrowDown size={24} />
           </ArrowDown>

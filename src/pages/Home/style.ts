@@ -1,3 +1,4 @@
+import { Row } from 'react-bootstrap'
 import { styled } from 'styled-components'
 
 export const HomeBackground = styled.div`
@@ -23,4 +24,9 @@ export const ArrowDown = styled.div`
   background-color: var(--primary);
   border: 0.5rem solid var(--soft-primary);
   border-radius: 2.5rem;
+`
+
+export const RowSection = styled(Row)`
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 `
