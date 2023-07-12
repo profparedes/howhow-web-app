@@ -18,7 +18,7 @@ export const BackgroundCard = styled.div<IStyledProps>`
   border-radius: 1.5rem;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     width: ${({ $isSelected }) => ($isSelected ? '50%' : '25%')};
   }
 

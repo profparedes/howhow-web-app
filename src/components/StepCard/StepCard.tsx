@@ -25,7 +25,7 @@ const StepCard: React.FC<IStepCardProps> = ({
 
   return (
     <BackgroundCard
-      className="d-flex flex-column"
+      className="d-flex flex-column mb-4"
       onClick={onClick}
       $isSelected={selectedCard}
     >

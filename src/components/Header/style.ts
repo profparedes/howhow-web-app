@@ -11,3 +11,8 @@ export const Img = styled.img`
   width: 10.625rem;
   height: 2.875rem;
 `
+
+export const MenuButton = styled.button`
+  background-color: transparent;
+  border: none;
+`

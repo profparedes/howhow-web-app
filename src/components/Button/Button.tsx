@@ -19,7 +19,7 @@ const Button: React.FC<IButtomProps> = ({
 }) => {
   return (
     <StyledButton
-      // variant={outline ? 'outline-primary' : 'primary'}
+      className="d-inline-block align-items-center"
       $isOutline={outline}
       onClick={handleClick}
       to="*"

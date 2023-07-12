@@ -15,11 +15,11 @@ i18n
   .init({
     // for all options read: https://www.i18next.com/overview/configuration-options
     debug: Config.i18n.debbug,
-    fallbackLng: 'en',
+    fallbackLng: 'pt-BR',
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
-    supportedLngs: ['en', 'pt-BR'],
+    supportedLngs: ['en', 'pt-BR', 'pt'],
   })
 
 export default i18n
