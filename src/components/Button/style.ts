@@ -5,7 +5,7 @@ interface IStyledProps {
   $isOutline?: boolean
 }
 
-export const StyledButton = styled(Link) <IStyledProps>`
+export const StyledButton = styled(Link)<IStyledProps>`
   background-color: ${({ $isOutline }) =>
     $isOutline ? '#fff' : 'var(--primary)'};
   color: ${({ $isOutline }) => ($isOutline ? 'var(--primary)' : '#fff')};
