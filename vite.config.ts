@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => ({
   // https://vitest.dev/guide
   test: {
     environment: 'jsdom',
+    setupFiles: './setupTest.ts',
   },
   // https://vitejs.dev/plugins/
   plugins: [

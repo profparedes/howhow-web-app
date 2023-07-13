@@ -13,6 +13,6 @@ describe('BaseComponent', () => {
 
     const children = getByText('TEST')
 
-    expect(children).toBeTruthy()
+    expect(children).toBeInTheDocument()
   })
 })

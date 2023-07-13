@@ -23,8 +23,8 @@ describe('LanguageSwitcher', () => {
     const buttonEn = getByTestId('language-switcher-en-button')
     const buttonPtBr = getByTestId('language-switcher-pt-br-button')
 
-    expect(buttonEn).toBeTruthy()
-    expect(buttonPtBr).toBeTruthy()
+    expect(buttonEn).toBeInTheDocument()
+    expect(buttonPtBr).toBeInTheDocument()
   })
 
   it('should call a function when clicking on each language button', async () => {

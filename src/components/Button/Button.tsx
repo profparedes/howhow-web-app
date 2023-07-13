@@ -24,7 +24,8 @@ const Button: React.FC<IButtomProps> = ({
       onClick={handleClick}
       to="*"
     >
-      {label} {withArrow && <MdKeyboardArrowRight size={24} />}
+      {label}{' '}
+      {withArrow && <MdKeyboardArrowRight data-testid="arrow-down" size={24} />}
     </StyledButton>
   )
 }
