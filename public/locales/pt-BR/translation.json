@@ -87,5 +87,9 @@
     "politicy": "Políticas",
     "politicy-privacy": "Política de privacidade",
     "politicy-terms": "Termos de uso"
+  },
+  "toaster": {
+    "success": "Email enviado com sucesso",
+    "error": "Erro ao enviar email"
   }
 }

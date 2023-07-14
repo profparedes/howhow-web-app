@@ -3,6 +3,9 @@ const Config = {
     name: import.meta.env.VITE_APP_NAME,
     version: import.meta.env.PACKAGE_VERSION,
   },
+  api: {
+    url: import.meta.env.VITE_API_URL,
+  },
   i18n: {
     debbug: JSON.parse(
       (import.meta.env.VITE_I18N_DEBBUG ?? 'false').toLocaleLowerCase(),

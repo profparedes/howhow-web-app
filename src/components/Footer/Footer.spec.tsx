@@ -1,6 +1,6 @@
-import { render, cleanup } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
-import { expect, describe, it, afterEach, vi } from 'vitest'
+import { expect, describe, it, vi } from 'vitest'
 
 import Footer from './Footer'
 
@@ -9,8 +9,6 @@ vi.mock('react-i18next', () => ({
 }))
 
 describe('Footer', () => {
-  afterEach(cleanup)
-
   it('should render logo and social media icons correctly', () => {
     const { getByAltText } = render(
       <BrowserRouter>
@@ -18,10 +16,10 @@ describe('Footer', () => {
       </BrowserRouter>,
     )
 
-    expect(getByAltText('Logo')).toBeTruthy()
-    expect(getByAltText('Instagram')).toBeTruthy()
-    expect(getByAltText('Facebook')).toBeTruthy()
-    expect(getByAltText('Linkedin')).toBeTruthy()
+    expect(getByAltText('Logo')).toBeInTheDocument()
+    expect(getByAltText('Instagram')).toBeInTheDocument()
+    expect(getByAltText('Facebook')).toBeInTheDocument()
+    expect(getByAltText('Linkedin')).toBeInTheDocument()
   })
 
   it('should render links correctly', () => {

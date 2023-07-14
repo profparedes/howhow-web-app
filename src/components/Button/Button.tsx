@@ -22,7 +22,7 @@ const Button: React.FC<IButtomProps> = ({
       className="d-inline-block align-items-center"
       $isOutline={outline}
       onClick={handleClick}
-      to="*"
+      to="/"
     >
       {label}{' '}
       {withArrow && <MdKeyboardArrowRight data-testid="arrow-down" size={24} />}

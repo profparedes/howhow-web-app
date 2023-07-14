@@ -17,6 +17,7 @@ const Header: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false)
 
   const handleLinkClick = (sectionId: string): void => {
+    setShowMenu(false)
     const sectionElement = document.getElementById(sectionId)
 
     if (sectionElement) {
@@ -29,7 +30,11 @@ const Header: React.FC = () => {
       <div className="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between px-5">
         <Img src={HowhowLogo} alt="Howhow logo" />
         <div className="d-block d-lg-none mt-3">
-          <MenuButton type="button" onClick={() => setShowMenu(true)}>
+          <MenuButton
+            data-testid="menu-button"
+            type="button"
+            onClick={() => setShowMenu(true)}
+          >
             <AiOutlineMenu size={24} />
           </MenuButton>
         </div>
@@ -58,7 +63,11 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <Offcanvas show={showMenu} onHide={() => setShowMenu(false)}>
+      <Offcanvas
+        data-testid="canvas-menu"
+        show={showMenu}
+        onHide={() => setShowMenu(false)}
+      >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
             <Img src={HowhowLogo} alt="Howhow logo" />

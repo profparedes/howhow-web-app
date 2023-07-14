@@ -22,5 +22,11 @@ export const FormContainer = styled(Form)`
       background-color: #eee;
       color: var(--primary);
     }
+
+    &:disabled {
+      background-color: #ccc;
+      color: #000;
+      border: none;
+    }
   }
 `

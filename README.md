@@ -1,92 +1,41 @@
-# Vite + React + Typescript + Vitest + Eslint + Prettier + EditorConfig
+# HowHow
 
-A starter for React with Typescript with the blazing fast Vite, strong Vitest framework and all static code testing with Eslint and formatting with Prettier and EditorConfig.
+howhow is a web application built with React.js, TypeScript, and Bootstrap. It utilizes Yarn as a package manager.
 
-## Installation & run
+## Overview
 
-1. Install [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) extensions for VS Code. **Do not install the Prettier extension**
+The project includes an ``.env.example`` file with the following environment variables:
 
-2. Add these configs to VS Code settings:
+To configure the application, copy the `.env.example` file and rename it to `.env`. Update the values of the environment variables in the `.env` file according to your specific configuration.
 
+To ensure the proper functioning of the application, a backend server is required for email submission through the form. The backend server can be found at howhow-api: https://github.com/profparedes/howhow-api. Please refer to the README file of the backend repository for installation instructions.
+
+The project also includes tests that can be executed using the yarn test command.
+
+The project is hosted on Netlify. You can access the live version of the application at https://howhow.fabioparedes.dev.
+
+### Installation
+1. Clone the repository:
 ```
-"[javascript]": {
-    "editor.defaultFormatter": null,
-},
-"editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": false
-},
-"editor.formatOnSave": false,
-"eslint.codeActionsOnSave.mode": "all",
-"eslint.packageManager": "yarn",
-"eslint.validate": [
-    "javascript",
-    "javascriptreact"
-],
+git clone https://github.com/profparedes/howhow-web-app.git
 ```
-
-3. Clone the repo and run:
-
+2. Navigate to the project directory:
 ```
-cp .env.example .env
+cd howhow
 ```
-
+3. Install the dependencies using Yarn:
 ```
 yarn
 ```
-
+4. To start the development server, run the following command:
 ```
 yarn dev
 ```
+This will launch the application at http://localhost:3000 in your browser.
 
-## Test
-
+### Testing
+To run the tests, use the following command:
 ```
 yarn test
 ```
-
-## Troubleshooting
-
-### Error: Cannot find module 'node:path'
-
-Solution: Use Node.js v16
-
----
-
-### Error: Command failed: node /path/to/project/node_modules/esbuild/bin/esbuild --version dyld: Symbol not found: \_SecTrustEvaluateWithError
-
-Solution:
-
-- Stop using `npm` or `yarn` for this project
-- Install [pnpm](https://pnpm.io)
-- Remove `node_modules`
-- Remove `yarn.lock` (if exists)
-- Remove `package-lock.json` (if exists)
-- Add the following to `package.json`
-
-```
-"devDependencies":
-    "esbuild-wasm":"latest",
-},
-"pnpm":{
-    "overrides":{
-        "esbuild":"npm:esbuild-wasm@latest"
-    }
-},
-```
-
-Download the dependencies:
-
-```
-pnpm i
-```
-
-Run the project:
-
-```
-pnpm run dev
-```
-
-## Credits
-
-This is a fork of [https://github.com/TheSwordBreaker/vite-reactts-eslint-prettier](https://github.com/TheSwordBreaker/vite-reactts-eslint-prettier)
+This will execute the test suite and provide the test results.
