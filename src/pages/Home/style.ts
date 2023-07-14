@@ -38,8 +38,13 @@ export const ArrowDown = styled.div`
 `
 
 export const RowSection = styled(Row)`
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  @media (min-width: 1024px) {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
 `
 
 export const SectionBanner = styled.div`
